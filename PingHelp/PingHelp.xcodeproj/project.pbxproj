@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E4146B4237473F800701ACB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4146B3237473F800701ACB /* AppDelegate.swift */; };
+		1E4146B6237473F800701ACB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4146B5237473F800701ACB /* HomeViewController.swift */; };
+		1E4146B9237473F800701ACB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E4146B7237473F800701ACB /* Main.storyboard */; };
+		1E4146BB237473F900701ACB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E4146BA237473F900701ACB /* Assets.xcassets */; };
+		1E4146BE237473F900701ACB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E4146BC237473F900701ACB /* LaunchScreen.storyboard */; };
+		1E4146C9237473F900701ACB /* PingHelpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4146C8237473F900701ACB /* PingHelpTests.swift */; };
+		1E4146D4237473F900701ACB /* PingHelpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4146D3237473F900701ACB /* PingHelpUITests.swift */; };
+		1E4146E62374949400701ACB /* iOSDFULibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E4146E32374949400701ACB /* iOSDFULibrary.framework */; };
+		1E4146E72374949400701ACB /* MTBeaconPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E4146E42374949400701ACB /* MTBeaconPlus.framework */; };
+		1E4146E92374969A00701ACB /* PingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4146E82374969A00701ACB /* PingManager.swift */; };
+		1E4146EB2374AAA400701ACB /* PingBeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4146EA2374AAA400701ACB /* PingBeaconManager.swift */; };
+		1E4146ED2374AAB600701ACB /* PingLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4146EC2374AAB600701ACB /* PingLocationManager.swift */; };
+		1E4F98CF238B525C0078CB77 /* BeaconsTableViewcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4F98CE238B525C0078CB77 /* BeaconsTableViewcell.swift */; };
+		1E4F98D1238B6EA10078CB77 /* ViewControllerLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4F98D0238B6EA10078CB77 /* ViewControllerLoader.swift */; };
+		1E73720B238CBE8800782DE8 /* ALLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E73720A238CBE8800782DE8 /* ALLoadingView.swift */; };
+		1EE980F42378C67000A36A08 /* iOSDFULibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E4146E32374949400701ACB /* iOSDFULibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1EE980F62378C67000A36A08 /* MTBeaconPlus.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E4146E42374949400701ACB /* MTBeaconPlus.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1EE980F72378C67000A36A08 /* Zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E4146E22374949400701ACB /* Zip.framework */; };
+		1EE980F82378C67000A36A08 /* Zip.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E4146E22374949400701ACB /* Zip.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1EF596ED238B3C89005EDB08 /* BeaconPairingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF596EC238B3C89005EDB08 /* BeaconPairingViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E4146C5237473F900701ACB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E4146A8237473F700701ACB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E4146AF237473F700701ACB;
+			remoteInfo = PingHelp;
+		};
+		1E4146D0237473F900701ACB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E4146A8237473F700701ACB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E4146AF237473F700701ACB;
+			remoteInfo = PingHelp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1EE980F92378C67000A36A08 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1EE980F42378C67000A36A08 /* iOSDFULibrary.framework in Embed Frameworks */,
+				1EE980F82378C67000A36A08 /* Zip.framework in Embed Frameworks */,
+				1EE980F62378C67000A36A08 /* MTBeaconPlus.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1E4146B0237473F800701ACB /* PingHelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PingHelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E4146B3237473F800701ACB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1E4146B5237473F800701ACB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1E4146B8237473F800701ACB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1E4146BA237473F900701ACB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E4146BD237473F900701ACB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1E4146BF237473F900701ACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E4146C4237473F900701ACB /* PingHelpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PingHelpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E4146C8237473F900701ACB /* PingHelpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingHelpTests.swift; sourceTree = "<group>"; };
+		1E4146CA237473F900701ACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E4146CF237473F900701ACB /* PingHelpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PingHelpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E4146D3237473F900701ACB /* PingHelpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingHelpUITests.swift; sourceTree = "<group>"; };
+		1E4146D5237473F900701ACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E4146E22374949400701ACB /* Zip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Zip.framework; sourceTree = "<group>"; };
+		1E4146E32374949400701ACB /* iOSDFULibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iOSDFULibrary.framework; sourceTree = "<group>"; };
+		1E4146E42374949400701ACB /* MTBeaconPlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MTBeaconPlus.framework; sourceTree = "<group>"; };
+		1E4146E82374969A00701ACB /* PingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingManager.swift; sourceTree = "<group>"; };
+		1E4146EA2374AAA400701ACB /* PingBeaconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingBeaconManager.swift; sourceTree = "<group>"; };
+		1E4146EC2374AAB600701ACB /* PingLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingLocationManager.swift; sourceTree = "<group>"; };
+		1E4F98CB238B50300078CB77 /* iHUD Loader */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "iHUD Loader"; path = "PingHelp/Frameworks/iHUD Loader"; sourceTree = "<group>"; };
+		1E4F98CE238B525C0078CB77 /* BeaconsTableViewcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconsTableViewcell.swift; sourceTree = "<group>"; };
+		1E4F98D0238B6EA10078CB77 /* ViewControllerLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLoader.swift; sourceTree = "<group>"; };
+		1E73720A238CBE8800782DE8 /* ALLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALLoadingView.swift; sourceTree = "<group>"; };
+		1EF596EC238B3C89005EDB08 /* BeaconPairingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconPairingViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E4146AD237473F700701ACB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E4146E72374949400701ACB /* MTBeaconPlus.framework in Frameworks */,
+				1E4146E62374949400701ACB /* iOSDFULibrary.framework in Frameworks */,
+				1EE980F72378C67000A36A08 /* Zip.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E4146C1237473F900701ACB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E4146CC237473F900701ACB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E4146A7237473F700701ACB = {
+			isa = PBXGroup;
+			children = (
+				1E4146B2237473F800701ACB /* PingHelp */,
+				1E4146C7237473F900701ACB /* PingHelpTests */,
+				1E4146D2237473F900701ACB /* PingHelpUITests */,
+				1E4146B1237473F800701ACB /* Products */,
+				1E4F98CA238B50300078CB77 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1E4146B1237473F800701ACB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E4146B0237473F800701ACB /* PingHelp.app */,
+				1E4146C4237473F900701ACB /* PingHelpTests.xctest */,
+				1E4146CF237473F900701ACB /* PingHelpUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E4146B2237473F800701ACB /* PingHelp */ = {
+			isa = PBXGroup;
+			children = (
+				1E4146B3237473F800701ACB /* AppDelegate.swift */,
+				1E4146E82374969A00701ACB /* PingManager.swift */,
+				1E4146EC2374AAB600701ACB /* PingLocationManager.swift */,
+				1E4146EA2374AAA400701ACB /* PingBeaconManager.swift */,
+				1E73720D2390BECD00782DE8 /* View Controllers */,
+				1E4146B7237473F800701ACB /* Main.storyboard */,
+				1E4146BA237473F900701ACB /* Assets.xcassets */,
+				1E4146BC237473F900701ACB /* LaunchScreen.storyboard */,
+				1E4146BF237473F900701ACB /* Info.plist */,
+				1E4146E12374946200701ACB /* Frameworks */,
+			);
+			path = PingHelp;
+			sourceTree = "<group>";
+		};
+		1E4146C7237473F900701ACB /* PingHelpTests */ = {
+			isa = PBXGroup;
+			children = (
+				1E4146C8237473F900701ACB /* PingHelpTests.swift */,
+				1E4146CA237473F900701ACB /* Info.plist */,
+			);
+			path = PingHelpTests;
+			sourceTree = "<group>";
+		};
+		1E4146D2237473F900701ACB /* PingHelpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1E4146D3237473F900701ACB /* PingHelpUITests.swift */,
+				1E4146D5237473F900701ACB /* Info.plist */,
+			);
+			path = PingHelpUITests;
+			sourceTree = "<group>";
+		};
+		1E4146E12374946200701ACB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E73720A238CBE8800782DE8 /* ALLoadingView.swift */,
+				1E4146E32374949400701ACB /* iOSDFULibrary.framework */,
+				1E4146E42374949400701ACB /* MTBeaconPlus.framework */,
+				1E4146E22374949400701ACB /* Zip.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		1E4F98CA238B50300078CB77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E4F98CB238B50300078CB77 /* iHUD Loader */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1E73720D2390BECD00782DE8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1E4F98D0238B6EA10078CB77 /* ViewControllerLoader.swift */,
+				1E4146B5237473F800701ACB /* HomeViewController.swift */,
+				1EF596EC238B3C89005EDB08 /* BeaconPairingViewController.swift */,
+				1E4F98CE238B525C0078CB77 /* BeaconsTableViewcell.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E4146AF237473F700701ACB /* PingHelp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E4146D8237473F900701ACB /* Build configuration list for PBXNativeTarget "PingHelp" */;
+			buildPhases = (
+				1E4146AC237473F700701ACB /* Sources */,
+				1E4146AD237473F700701ACB /* Frameworks */,
+				1E4146AE237473F700701ACB /* Resources */,
+				1EE980F92378C67000A36A08 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PingHelp;
+			productName = PingHelp;
+			productReference = 1E4146B0237473F800701ACB /* PingHelp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1E4146C3237473F900701ACB /* PingHelpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E4146DB237473F900701ACB /* Build configuration list for PBXNativeTarget "PingHelpTests" */;
+			buildPhases = (
+				1E4146C0237473F900701ACB /* Sources */,
+				1E4146C1237473F900701ACB /* Frameworks */,
+				1E4146C2237473F900701ACB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E4146C6237473F900701ACB /* PBXTargetDependency */,
+			);
+			name = PingHelpTests;
+			productName = PingHelpTests;
+			productReference = 1E4146C4237473F900701ACB /* PingHelpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1E4146CE237473F900701ACB /* PingHelpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E4146DE237473F900701ACB /* Build configuration list for PBXNativeTarget "PingHelpUITests" */;
+			buildPhases = (
+				1E4146CB237473F900701ACB /* Sources */,
+				1E4146CC237473F900701ACB /* Frameworks */,
+				1E4146CD237473F900701ACB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E4146D1237473F900701ACB /* PBXTargetDependency */,
+			);
+			name = PingHelpUITests;
+			productName = PingHelpUITests;
+			productReference = 1E4146CF237473F900701ACB /* PingHelpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E4146A8237473F700701ACB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = PingHelp;
+				TargetAttributes = {
+					1E4146AF237473F700701ACB = {
+						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					1E4146C3237473F900701ACB = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 1E4146AF237473F700701ACB;
+					};
+					1E4146CE237473F900701ACB = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 1E4146AF237473F700701ACB;
+					};
+				};
+			};
+			buildConfigurationList = 1E4146AB237473F700701ACB /* Build configuration list for PBXProject "PingHelp" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E4146A7237473F700701ACB;
+			productRefGroup = 1E4146B1237473F800701ACB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E4146AF237473F700701ACB /* PingHelp */,
+				1E4146C3237473F900701ACB /* PingHelpTests */,
+				1E4146CE237473F900701ACB /* PingHelpUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E4146AE237473F700701ACB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E4146BE237473F900701ACB /* LaunchScreen.storyboard in Resources */,
+				1E4146BB237473F900701ACB /* Assets.xcassets in Resources */,
+				1E4146B9237473F800701ACB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E4146C2237473F900701ACB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E4146CD237473F900701ACB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E4146AC237473F700701ACB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E4146E92374969A00701ACB /* PingManager.swift in Sources */,
+				1E73720B238CBE8800782DE8 /* ALLoadingView.swift in Sources */,
+				1E4F98D1238B6EA10078CB77 /* ViewControllerLoader.swift in Sources */,
+				1E4146B6237473F800701ACB /* HomeViewController.swift in Sources */,
+				1E4146B4237473F800701ACB /* AppDelegate.swift in Sources */,
+				1E4146EB2374AAA400701ACB /* PingBeaconManager.swift in Sources */,
+				1EF596ED238B3C89005EDB08 /* BeaconPairingViewController.swift in Sources */,
+				1E4146ED2374AAB600701ACB /* PingLocationManager.swift in Sources */,
+				1E4F98CF238B525C0078CB77 /* BeaconsTableViewcell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E4146C0237473F900701ACB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E4146C9237473F900701ACB /* PingHelpTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E4146CB237473F900701ACB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E4146D4237473F900701ACB /* PingHelpUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E4146C6237473F900701ACB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E4146AF237473F700701ACB /* PingHelp */;
+			targetProxy = 1E4146C5237473F900701ACB /* PBXContainerItemProxy */;
+		};
+		1E4146D1237473F900701ACB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E4146AF237473F700701ACB /* PingHelp */;
+			targetProxy = 1E4146D0237473F900701ACB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1E4146B7237473F800701ACB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E4146B8237473F800701ACB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1E4146BC237473F900701ACB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E4146BD237473F900701ACB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1E4146D6237473F900701ACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1E4146D7237473F900701ACB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E4146D9237473F900701ACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4HX8683YJX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PingHelp/Frameworks",
+				);
+				INFOPLIST_FILE = PingHelp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PingHelp/Frameworks",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nav.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s arm64e";
+			};
+			name = Debug;
+		};
+		1E4146DA237473F900701ACB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4HX8683YJX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PingHelp/Frameworks",
+				);
+				INFOPLIST_FILE = PingHelp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PingHelp/Frameworks",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nav.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s arm64e";
+			};
+			name = Release;
+		};
+		1E4146DC237473F900701ACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4HX8683YJX;
+				INFOPLIST_FILE = PingHelpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PingHelp.PingHelpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PingHelp.app/PingHelp";
+			};
+			name = Debug;
+		};
+		1E4146DD237473F900701ACB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4HX8683YJX;
+				INFOPLIST_FILE = PingHelpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PingHelp.PingHelpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PingHelp.app/PingHelp";
+			};
+			name = Release;
+		};
+		1E4146DF237473F900701ACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4HX8683YJX;
+				INFOPLIST_FILE = PingHelpUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PingHelp.PingHelpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PingHelp;
+			};
+			name = Debug;
+		};
+		1E4146E0237473F900701ACB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4HX8683YJX;
+				INFOPLIST_FILE = PingHelpUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PingHelp.PingHelpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PingHelp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E4146AB237473F700701ACB /* Build configuration list for PBXProject "PingHelp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E4146D6237473F900701ACB /* Debug */,
+				1E4146D7237473F900701ACB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E4146D8237473F900701ACB /* Build configuration list for PBXNativeTarget "PingHelp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E4146D9237473F900701ACB /* Debug */,
+				1E4146DA237473F900701ACB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E4146DB237473F900701ACB /* Build configuration list for PBXNativeTarget "PingHelpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E4146DC237473F900701ACB /* Debug */,
+				1E4146DD237473F900701ACB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E4146DE237473F900701ACB /* Build configuration list for PBXNativeTarget "PingHelpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E4146DF237473F900701ACB /* Debug */,
+				1E4146E0237473F900701ACB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E4146A8237473F700701ACB /* Project object */;
+}
